@@ -1,0 +1,10 @@
+CRATE TABLE conntact_from(
+    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    full_name VARCHAR(25) NOT NULL,
+    phone_number VARCHAR(15) NOT NULL,
+    email VARCHAR(25) NOT NULL,
+    subject VARCHAR(500) NOT NULL,
+    message TEXT NOT NULL,
+    user_ip VARCHAR(17) NOT NULL,
+    submit_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
